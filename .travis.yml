@@ -1,8 +1,13 @@
 language: node_js
 node_js:
-  - "7.2"
+- '7.2'
 beforescript:
-  - npm install -g gulp
-  - npm install
-script: 
-  - gulp package-app
+- npm install -g gulp
+- npm install
+script:
+- gulp package-app
+deploy:
+  provider: heroku
+  app: dromedary-segusaro
+  api_key:
+    secure: q4BVfeyJUPhSZbQE13SbE5ImmniBxt2jbqBudl2ZNbTKMauyXc2d2VENe5F2tzG+ivOyR6WukRWQyIQIWu0FtXu1d3X/73NteylW6hUFSYxqFl8NxCkK711V+bUxnIzCKpXoGMFVBV5eyg0TDOKnsmdxW3SM7OHyZLS0S+vim77aLaO4tG2tOYIAfsvf2ffRQFJvOuoVP7QObHdmGiUMYE9C6RsUKJ1dVu3p5mJIBhx63G5S1jlKZHT9FMt4jN/Bqo09oyD62JCTxGk/qgN30ec322mdk0lhi32O+iP4pDhEvp+DAhhvGWRqIr3r8XTMp+bcl6smrjoHEC/75Sdg3m7Es8vZ0xBEuErU0yjJJX4we8MfAHFqr+oo5hyE1SmIuHATS0dH0VV89nS3UchNmRVDR8EvLmqhPfVqUjeDRbuJ8I1u2B+XB05IbEnYK2pPNUQH8jTnXD7L2c4ihnYAPO4rSU4nxUfjaBYBh7EwEgRCG0U3wtr884UT4yqdzVNjhmArlagq6Bqu8/BKwmElt/IlzkKvJ93H9iKSDMd5ZLyVqP1s2ven4WOiQ1GcWG2iVfzhUmC7P9ViAuNgJlvENDW7KII+oYNNNF9XLBxAaRuZENCR6kfJyFZkCucBv3zZwYXzndbArLUnzp4oiRmAxhc8TKp6la4k6CKcSDtBZMI=
