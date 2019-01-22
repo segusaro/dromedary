@@ -4,6 +4,7 @@ node_js:
 beforescript:
 - npm install -g gulp
 - npm install
+- npm install gulp-cucumber --save-dev
 script:
 - gulp package-app
 deploy:
